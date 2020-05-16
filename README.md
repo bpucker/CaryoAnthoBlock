@@ -8,7 +8,7 @@ expression levels of anthocyanin and betalain biosynthesis pathways
 2) Run merge_counttables_per_assembly.py to combine all count tables belonging to the same assembly
 
 
-1) Run KIPEs for identification of anthocyanin biosynthesis genes: 
+1) Run KIPEs for identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs
 
 2) Run process_KIPEs_results.py to extract relevant information
 
@@ -17,4 +17,4 @@ expression levels of anthocyanin and betalain biosynthesis pathways
 
 # References
 
-KIPEs
+KIPEs: https://github.com/bpucker/KIPEs
