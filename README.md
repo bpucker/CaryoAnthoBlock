@@ -3,6 +3,10 @@
 expression levels of anthocyanin and betalain biosynthesis pathways
 
 
+1) Run kallisto_pipeline.py to get count tables per SRA data set
+
+2) Run merge_counttables_per_assembly.py to combine all count tables belonging to the same assembly
+
 
 1) Run KIPEs for identification of anthocyanin biosynthesis genes: 
 
