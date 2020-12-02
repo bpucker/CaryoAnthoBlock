@@ -109,6 +109,35 @@ Mandatory:
 a) `prep_TPM_summary_pairwise.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
 
 
+```
+Usage:
+  python prep_TPM_summary_pairwise.py --exp1 <FILE> --config1 <FILE> --exp2 <FILE> --config2 <FILE> --out <FOLDER>
+
+Mandatory:
+  --exp1    STR         Expression file of species1
+  --config1 STR         Config file of species1
+  --exp2    STR         Expression file of species2
+  --config2 STR         Config file of species2
+  --out     STR         Output folder
+```
+
+`--exp1` specifies the expression file of species1. This file contains gene IDs in the first columns and the transcript abundance assigned to these genes for samples in the following columns. The first row is the header containing the sample run IDs.
+
+`--config1` config file of species1. This file has three columns separated by tabs: pigment status, gene names, and comma-separated list of gene IDs. Example:
+B	CHS	Sico@28748,Sico@28746
+B	CHI	Sico@179
+B	F3H	Sico@31711,Sico@36327
+B	DFR	Sico@2593,Sico@9871
+B	LAR	Sico@23899
+B	ANR	Sico@28328
+
+`--exp2` specifies the expression file of species2.
+
+`--config2` config file of species1.
+
+`--out` specifies the input file. `--outdir` specifies the output folder.
+
+
 b) `summarize_single_gene_exp.py` combines the transcript abundances per species and gene into a summary file and construct a figure to visualize the result.
 
 
