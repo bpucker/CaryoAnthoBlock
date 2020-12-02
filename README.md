@@ -137,7 +137,7 @@ B	ANR	Sico@28328
 
 `--config2` config file of species1. See explanations of the file structure above.
 
-`--out` specifies the input file. `--outdir` specifies the output folder.
+`--out` specifies the output file. `--outdir` specifies the output folder.
 
 
 b) `summarize_single_gene_exp.py` combines the transcript abundances per species and gene into a summary file and construct a figure to visualize the result.
@@ -200,6 +200,26 @@ Each per gene config file contains the IDs of all orthologs of the respective ge
 
 
 b) `summarize_data_for_plots.py` combines the transcript abundances for each steps in the pathway across all species in one lineage. The result is used to identify systematic differences between species. analyze_exp_pattern.py is an outdated version of the same script and generates plots with broken Y axis to visualize the results.
+
+```
+Usage:
+  python summarize_data_for_plots.py --in <FILE> --out <FOLDER> --taxon <FILE> --genes <STR>
+
+Mandatory:
+  --in    STR         Input file
+  --taxon STR         Taxon table
+  --genes STR         List of genes
+  --out   STR         Output folder
+```
+
+`--in` specifies the input file which is the summary file produced by `prep_TPM_summary.py`.
+
+`--taxon` specifies a table connecting species ID to species names and to the RNAseq data sets analysed.
+
+`--genes` specifies the genes of interest. A comma-separated list of gene names is expected. 
+
+`--out` specifies the output folder. This folder is created if it does not exist.
+
 
 
 
