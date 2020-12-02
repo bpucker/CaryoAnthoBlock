@@ -56,10 +56,31 @@ Mandatory:
 `--spec` specifies a species info file which links the individual RNAseq sample (run) IDs to the corresponding assembly ID (the transcriptome assembly).
 
 
-
 3) KIPEs is used for the identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs
 
-4) Run `process_KIPEs_results.py` to extract relevant information
+
+4) Run `process_KIPEs_results.py` to extract the relevant sequences from the KIPEs results.
+
+```
+Usage:
+  python process_KIPEs_results.py --in <FOLDER> --out <FOLDER> --genes <STR> --roi <STR>
+
+Mandatory:
+  --in STR         Input folder(s)
+  --out STR        Output folder
+  --genes STR      Genes of interest
+  --roi STR        Residues of interest
+```
+
+`--in` specifies the input folder or a comma-separated list of input folders.
+
+`--out` specifies the output folder for all result files.
+
+`--genes` specifies the gene(s) of interest. A comma-separated list of all gene IDs of interest should be supplied.
+
+`--roi` specifies residues of interest in each gene. Comma-separated list of residues for each gene is expected. Underscore is used to separate the residues of different genes. The order of residue groups need to match the order of genes supplied via `--genes`.
+
+
 
 5) Run `filter_samples.py` to clean the combined count tables per assembly. This removes RNAseq samples which might not be bona fide quantitative analyses (e.g. normalized libraries or mislabeled DNA sequencing experiments).
 
