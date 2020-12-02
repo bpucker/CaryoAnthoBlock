@@ -1,19 +1,16 @@
 ### Boas Pucker ###
 ### bp423@cam.ac.uk ###
-### v0.1 ###
+### v0.12 ###
 
 __usage__ = """
 					python merge_counttables_per_assembly.py
 					--in <INPUT_FOLDER>
 					--tpms <TPM_OUTPUT_FOLDER>
 					--counts <COUNTS_OUTPUT_FOLDER>
-					--spec <GENES_OF_INTEREST(comma separated list)>
+					--spec <SPECIES_INFO_FILE>
 					"""
 
-#input folder contains kallisto count tables
-
 import os, glob, sys
-import matplotlib.pyplot as plt
 
 # --- end of imoprts --- #
 
@@ -108,7 +105,6 @@ def main( arguments ):
 				out.write( "\t" + "\t".join( samples ) + '\n' )
 				for gene in sorted( counts.keys() ):
 					out.write( "\t".join( [ gene ] + counts[ gene ] ) + '\n' )
-
 
 
 if '--in' in sys.argv and '--tpms' in sys.argv and '--counts' in sys.argv and '--spec' in sys.argv:
