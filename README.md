@@ -222,16 +222,60 @@ Mandatory:
 `--out` specifies the output folder. This folder is created if it does not exist.
 
 
+### 8) Subfunctionalization of gene copies could be due to divergent expression.###
+
+`coexp_analysis.py` was applied to compare the co-expression of different gene copies (e.g. CHS) with other steps in the pathway (e.g. FLS, DFR, and ANS) to investigate sub-functionalization in form of differential transcript abundances.
+
+```
+Usage:
+  python coexp_analysis.py --exp <FILE> --refgene <STR> --gene1 <STR> --gene2 <STR> --gene3 <STR> --out <FOLDER>
+
+Mandatory:
+  --exp     STR         Expression input file
+  --refgene STR         ID of reference gene
+  --gene1   STR         ID of gene of interest 1
+  --gene2   STR         ID of gene of interest 2
+  --gene3   STR         ID of gene of interest 3
+  --out     STR         Output folder
+  
+  optional:
+  --refname STR         Displayed label of reference gene
+  --name1   STR         Displayed label of gene 1
+  --name2   STR         Displayed label of gene 2
+  --name3   STR         Displayed label of gene 3
+```
+
+`--exp` specifies the expression input file. Please see explanations above about the expression file structure.
+
+`--refgene` specifies the ID of a gene that should be used as reference for the co-expression analysis. Example: CHS gene ID if FLS and DFR co-expression with CHS should be compared.
+
+`--gene1` specifies the ID of the first gene of interest to check against the reference gene. 
+
+`--gene2` specifies the ID of the second gene of interest to check against the reference gene. 
+
+`--gene3` specifies the ID of the second gene of interest to check against the reference gene.
+
+`--out` specifies the output folder. This folder will be created if it does not exist.
+
+`--refname` specifies the label of the reference gene to display in figures.
+
+`--name1` specifies the label of gene1 to display in figures.
+
+`--name2` specifies the label of gene2 to display in figures.
+
+`--name3` specifies the label of gene3 to display in figures.
 
 
 
 ### Additional scripts ###
 
-Run `get_best_seq_per_spec.py` to extract the best candidate sequences of a species without a perfect match for the KIPEs results.
+1) Run `get_best_seq_per_spec.py` to extract the best candidate sequences of a species without a perfect match for the KIPEs results.
 
-`coexp_banalysis.py` was applied to compare the co-expression of different gene copies (e.g. CHS) with other steps in the pathway (e.g. FLS, DFR, and ANS) to investigate sub-functionalization in form of differential transcript abundances.
 
-`sample_classifier.py` can be used to classify a new RNAseq sample based on the transcript abundances of specific marker genes. It is possible to distinguish between tissues with sufficient contrast e.g. flower, leaf, and root. This classificaiton requires datasets of all these tissue for a related species.
+
+
+
+2) `sample_classifier.py` can be used to classify a new RNAseq sample based on the transcript abundances of specific marker genes. It is possible to distinguish between tissues with sufficient contrast e.g. flower, leaf, and root. This classificaiton requires datasets of all these tissue for a related species.
 
 
 
