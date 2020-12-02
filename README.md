@@ -10,7 +10,7 @@ Usage:
   python kallisto_pipeline.py --cds <FILE> --reads <DIR>] --out <DIR> --tmp <DIR>
 
 Mandatory:
-  --cds STR          Reference file (FASTA) containing the coding sequences or mRNA sequences that will be used for calculation of transcript abundances    
+  --cds STR          Reference file (FASTA)     
   --reads STR        Path to folder containing FASTQ files in subfolder per sample.
   --out STR          Output directory
   --tmp STR          Directory for temporary files
@@ -21,12 +21,18 @@ Optional:
 ```
 
 
-`--cds`
-`--reads`
-`--out`
-`--tmp`
-`--kallisto`
-`--cpus`
+`--cds` specifies a multiple FASTA file containing the coding sequences or mRNA sequences that will be used for calculation of transcript abundances. All sequence IDs in this file need to be unique.
+
+`--reads` specifies a directory which contains one subfolder per RNAseq sample. Each subfolder is checked for gzip compressed FASTQ files. The identification of paired-end datasets is based on the filenames containing some frequently used tags like 'R1'/'pass_1' and 'R2'/'pass_2'. If no match of paired FASTQ files is possible, the identificaiton of single FASTQ files is performed. An average fragment size of 200bp with a standard deviation of 100bp is assumed for single end datasets.
+
+`--out` specifies the output folder. A full path should be given. The directory will be created if it does not exist. One TSV file per RNAseq sample will be stored in this folder. See `merge_counttables_per_assembly.py` for combination of these single files.
+
+`--tmp` specifies a folder for all temporary files. This folder can be deleted once the run is complete.
+
+`--kallisto` specifies the location of kallisto. This is required if kallisto is not in the PATH. Default: "kallisto".
+
+`--cpus` specifies the number of CPUs to run kallisto. Default: 10.
+
 
 2) Run merge_counttables_per_assembly.py to combine all count tables belonging to the same assembly
 
