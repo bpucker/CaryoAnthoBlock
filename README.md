@@ -1,6 +1,6 @@
 # AnthoExp
 
-The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated.
+The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated. Several (standard) scientific Python packages are required including numpy, scipy, and matplotlib.
 
 
 1) After downloading datasets from SRA/ENA, `kallisto_pipeline.py` is run to generate count tables per dataset.
@@ -173,6 +173,30 @@ Optional:
 7) Analysis of gene expression per gene across evolutionary lineages is based on these scripts:
 
 a) `prep_TPM_summary.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
+
+
+```
+Usage:
+  python prep_TPM_summary.py --exp <FOLDER> --config <FILE> --out <FOLDER>
+
+Mandatory:
+  --exp    STR         Folder containing all expression files per assembly
+  --config STR         Config file
+  --out    STR         Output folder
+```
+
+`--exp` specifies the folder containing the expression files per transcriptome assembly. Each file contains gene IDs in the first columns and the transcript abundances assigned to these genes for all analysed samples in the following columns with one value per column. The first row is the header containing the sample run IDs.
+
+`--config` config file of specifies the location of per gene config files which are required for this analysis. This file has three columns separated by tabs: pigment status, gene names, and gene specific config file. Example:
+```
+B	CHS	CHS_CONFIG_FILE.txt
+B	CHI	CHI_CONFIG_FILE.txt
+B	F3H	F3H_CONFIG_FILE.txt
+```
+Each per gene config file contains the IDs of all orthologs of the respective gene in all analyzed Caryophyllales species. One IDs is given per line.
+
+`--out` specifies the output folder. This folder is created if it does not exist.
+
 
 
 b) `summarize_data_for_plots.py` combines the transcript abundances for each steps in the pathway across all species in one lineage. The result is used to identify systematic differences between species. analyze_exp_pattern.py is an outdated version of the same script and generates plots with broken Y axis to visualize the results.
