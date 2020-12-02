@@ -1,8 +1,7 @@
 ### Boas Pucker ###
 ### bpucker@cebitec.uni-bielefeld.de ###
-### v0.32 ###
+### v0.33 ###
 
-## 0.31: -l=600, -s=300
 __usage__ = """
 					python kallisto_pipeline.py
 					--cds <CDS_FILE>
@@ -11,8 +10,8 @@ __usage__ = """
 					--out <FINAL_OUTPUT_FOLDER>
 					
 					optional:
-					--kallisto <FULL_PATH_TO_KALLISTO>
-					--cpus <NUMBER_OF_CPUS_TO_USE>
+					--kallisto <FULL_PATH_TO_KALLISTO>[kallisto]
+					--cpus <NUMBER_OF_CPUS_TO_USE>[10]
 					
 					bug reports and feature requests: bpucker@cebitec.uni-bielefeld.de
 					"""
