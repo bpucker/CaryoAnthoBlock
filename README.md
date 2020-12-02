@@ -1,4 +1,4 @@
-# AnthoBetaExp
+# AnthoExp
 
 The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated.
 
@@ -82,12 +82,35 @@ Mandatory:
 
 
 
-5) Run `filter_samples.py` to clean the combined count tables per assembly. This removes RNAseq samples which might not be bona fide quantitative analyses (e.g. normalized libraries or mislabeled DNA sequencing experiments).
+5) Run `filter_samples.py` to clean the combined count tables per assembly. This removes RNAseq samples which might not be bona fide quantitative analyses (e.g. normalized libraries or mislabeled DNA sequencing experiments). The proportion of all reads/TPMs that fall on the 100 most abundant transcripts (top100) is calculated and used to filter outliers.
+
+```
+Usage:
+  python filter_samples.py [--in <FILE> | --indir <FOLDER>] [--out <FILE>|--outdir <FOLDER>] --min <INT> --max <INT>
+
+Mandatory:
+  --in STR         Input folder(s)
+  --out STR        Output folder
+  --min INT        Minimal percentage of transcription on top100 transcripts
+  --max INT        Maximal percentage of transcription on top100 transcripts
+```
+
+`--in` specifies the input file. `--indir` specifies the output folder.
+
+`--out` specifies the input file. `--outdir` specifies the output folder.
+
+`--min` specifies the minimal percentage of reads/TPMs assigned to the top100 transcripts. An integer (percentage) is expected. Default: 10.
+
+`--max` specifies the minimal percentage of reads/TPMs assigned to the top100 transcripts. An integer (percentage) is expected. Default: 80.
+
 
 6) Analysis of the gene expression per gene across single species is based on these scripts:
 
 a) `prep_TPM_summary_pairwise.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
+
+
 b) `summarize_single_gene_exp.py` combines the transcript abundances per species and gene into a summary file and construct a figure to visualize the result.
+
 
 
 7) Analysis of gene expression per gene across evolutionary lineages is based on these scripts:
