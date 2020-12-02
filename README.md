@@ -271,12 +271,48 @@ Mandatory:
 
 1) Run `get_best_seq_per_spec.py` to extract the best candidate sequences of a species without a perfect match for the KIPEs results.
 
+```
+Usage:
+  python get_best_seq_per_spec.py --in <FOLDER> --out <FOLDER>
 
+Mandatory:
+  --in     STR         Folder of expression input file
+  --out    STR         Output folder
+  
+  optional:
+  --ratio  STR         Minimal proportion of matching residues
+  --cutoff STR         Minimal number of matching residues
+```
 
+`--in` specifies the input folder which is the KIPEs output folder.
+
+`--out` specifies the output folder. This folder will be created if it does not exist.
+
+`--ratio` specifies the proportion of known amion acid residues that must be matched by a sequence. This value can bet between 0 and 1. Default: 0.
+
+`--cutoff` specifies the minimal number of perfectly matched amino acid residues. Default: 0.
 
 
 2) `sample_classifier.py` can be used to classify a new RNAseq sample based on the transcript abundances of specific marker genes. It is possible to distinguish between tissues with sufficient contrast e.g. flower, leaf, and root. This classificaiton requires datasets of all these tissue for a related species.
 
+```
+Usage:
+  python sample_classifier.py --pep <FILE> --exp <FILE> --ref <FILE> --out <FOLDER>
+
+Mandatory:
+  --pep    STR         Peptide input file
+  --exp    STR         Expression input file
+  --ref    STR         Peptide reference file
+  --out    STR         Output folder
+```
+
+`--pep` specifies the peptide input file (FASTA).
+
+`--exp` specifies the expression input file. Please have a look at the file structure discription above.
+
+`--ref` specifies the peptide reference file (FASTA).
+
+`--out` specifies the output folder. This folder will be created if it does not exist.
 
 
 
