@@ -57,7 +57,7 @@ Mandatory:
 
 
 
-3) Run KIPEs for identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs
+3) KIPEs is used for the identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs
 
 4) Run `process_KIPEs_results.py` to extract relevant information
 
