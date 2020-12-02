@@ -152,15 +152,22 @@ Mandatory:
   --out     STR         Output folder
 
 Optional:
-  --break   INT
-  --cut     INT
-  --genes   STR
+  --break   INT         Break point of the Y axis to accommodate all data points
+  --cut     INT         Cutoff value to exclude outliers from visualization
+  --genes   STR         List of genes
 ```
 
-`--data` 
-`--species` 
-`--out` 
+`--data` specifies all data files that should be included in the analysis. A comma-separated list of file names (full path recommended).
 
+`--species` specifies the species labels for the output materials (figure and summary file). The order of species names need to match the order of data files supplied via `--data`.
+
+`--out` specifies the output folder. This folder will be created if it does not exist.
+
+`--break` specifies break point of the Y axis. This allows the accommodation of values over a large scale in one figure. Default: 100.
+
+`--cut` specifies an upper cutoff to exclude large values from the visualization. However, these values are included in the data output file for further statistical analyses. Default: 10000.
+
+`--genes` specifies the genes to be analysed. A comma-separated list is expected. Default: CHS,DFR,ANS.
 
 
 7) Analysis of gene expression per gene across evolutionary lineages is based on these scripts:
