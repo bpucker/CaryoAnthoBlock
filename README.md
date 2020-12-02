@@ -3,7 +3,7 @@
 The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated. Several (standard) scientific Python packages are required including numpy, scipy, and matplotlib.
 
 
-1) After downloading datasets from SRA/ENA, `kallisto_pipeline.py` is run to generate count tables per dataset.
+### 1) After downloading datasets from SRA/ENA, `kallisto_pipeline.py` is run to generate count tables per dataset. ###
 
 ```
 Usage:
@@ -34,7 +34,7 @@ Optional:
 `--cpus` specifies the number of CPUs to run kallisto. Default: 10.
 
 
-2) After producing single count tables per dataset, `merge_counttables_per_assembly.py` is run to combine all count tables belonging to the same assembly.
+### 2) After producing single count tables per dataset, `merge_counttables_per_assembly.py` is run to combine all count tables belonging to the same assembly. ###
 
 ```
 Usage:
@@ -56,10 +56,10 @@ Mandatory:
 `--spec` specifies a species info file which links the individual RNAseq sample (run) IDs to the corresponding assembly ID (the transcriptome assembly).
 
 
-3) KIPEs is used for the identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs
+### 3) KIPEs is used for the identification of anthocyanin biosynthesis genes: https://github.com/bpucker/KIPEs ###
 
 
-4) Run `process_KIPEs_results.py` to extract the relevant sequences from the KIPEs results.
+### 4) Run `process_KIPEs_results.py` to extract the relevant sequences from the KIPEs results. ###
 
 ```
 Usage:
@@ -82,7 +82,8 @@ Mandatory:
 
 
 
-5) Run `filter_samples.py` to clean the combined count tables per assembly. This removes RNAseq samples which might not be bona fide quantitative analyses (e.g. normalized libraries or mislabeled DNA sequencing experiments). The proportion of all reads/TPMs that fall on the 100 most abundant transcripts (top100) is calculated and used to filter outliers.
+### 5) Run `filter_samples.py` to clean the combined count tables per assembly.  ###
+This removes RNAseq samples which might not be bona fide quantitative analyses (e.g. normalized libraries or mislabeled DNA sequencing experiments). The proportion of all reads/TPMs that fall on the 100 most abundant transcripts (top100) is calculated and used to filter outliers.
 
 ```
 Usage:
@@ -104,7 +105,7 @@ Mandatory:
 `--max` specifies the minimal percentage of reads/TPMs assigned to the top100 transcripts. An integer (percentage) is expected. Default: 80.
 
 
-6) Analysis of the gene expression per gene across single species is based on these scripts:
+### 6) Analysis of the gene expression per gene across single species is based on these scripts. ###
 
 a) `prep_TPM_summary_pairwise.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
 
@@ -170,7 +171,7 @@ Optional:
 `--genes` specifies the genes to be analysed. A comma-separated list is expected. Default: CHS,DFR,ANS.
 
 
-7) Analysis of gene expression per gene across evolutionary lineages is based on these scripts:
+### 7) Analysis of gene expression per gene across evolutionary lineages is based on these scripts. ###
 
 a) `prep_TPM_summary.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
 
@@ -224,7 +225,7 @@ Mandatory:
 
 
 
-Additional scripts:
+### Additional scripts ###
 
 Run `get_best_seq_per_spec.py` to extract the best candidate sequences of a species without a perfect match for the KIPEs results.
 
