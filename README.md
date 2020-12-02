@@ -1,9 +1,32 @@
 # AnthoBetaExp
 
-expression levels of anthocyanin and betalain biosynthesis pathways
+The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated.
 
 
-1) Run kallisto_pipeline.py to get count tables per SRA data set
+1) After downloading datasets from SRA/ENA, `kallisto_pipeline.py` is run to generate count tables per dataset.
+
+```
+Usage:
+  python kallisto_pipeline.py --cds <FILE> --reads <DIR>] --out <DIR> --tmp <DIR>
+
+Mandatory:
+  --cds STR          Reference file (FASTA) containing the coding sequences or mRNA sequences that will be used for calculation of transcript abundances    
+  --reads STR        Path to folder containing FASTQ files in subfolder per sample.
+  --out STR          Output directory
+  --tmp STR          Directory for temporary files
+
+Optional:
+  --kallisto STR     Full path to kallisto including the actual file name
+  --cpus INT         Number of cores to run kallisto in parallel
+```
+
+
+`--cds`
+`--reads`
+`--out`
+`--tmp`
+`--kallisto`
+`--cpus`
 
 2) Run merge_counttables_per_assembly.py to combine all count tables belonging to the same assembly
 
