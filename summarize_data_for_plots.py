@@ -1,6 +1,6 @@
 ### Boas Pucker ###
 ### bpucker@cebitec.uni-bielefeld.de ###
-### v0.31 ###
+### v0.33 ###
 
 __usage__ = """
 					python summarize_data_for_plots.py
@@ -8,12 +8,16 @@ __usage__ = """
 					--out <OUTPUT_FOLDER>
 					--taxon <TAXON_FILE>
 					--genes <COMMA_SEPARATED_GENE_LIST>
+					
+					optional:
+					--ymax <Y_AXIS_CUTOFF>
 					"""
 
 import re, os, sys, math
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
+import matplotlib.patches as mpatches
 
 # --- end of imports --- #
 
@@ -64,16 +68,13 @@ def load_spec_name_mapping_table( taxon_file, origin ):
 	return mapping_table
 
 
-def generate_data_matrix_file( data, taxon_mapping, output_file, O_group, A_group, B_group, genes ):
+def generate_data_matrix_file( data, taxon_mapping, output_file, A_group, B_group, genes ):
 	"""! @brief generate a data matrix for heatmap construction """
 	
-	normed_data_O = {}	#outgroup
 	normed_data_A = {}	#A lineage
 	normed_data_B = {}	#B lineage
 	with open( output_file, "w" ) as out:
-		
 		for gene in genes:
-			normed_data_O.update( { gene: [] } )
 			normed_data_A.update( { gene: [] } )
 			normed_data_B.update( { gene: [] } )
 		out.write( "\t".join( [ "spec" ] + genes ) + "\n" )
@@ -83,7 +84,7 @@ def generate_data_matrix_file( data, taxon_mapping, output_file, O_group, A_grou
 			except KeyError:
 				spec = "XXX"
 			
-			if spec[:len(O_group  )] in [ O_group, A_group, B_group]:
+			if spec[:len( A_group )] == A_group or spec[:len( B_group )] == B_group:
 				values_for_new_line = []
 				for gene in genes:
 					try:
@@ -93,28 +94,99 @@ def generate_data_matrix_file( data, taxon_mapping, output_file, O_group, A_grou
 				new_line = [ spec ]
 				for idx, val in enumerate( values_for_new_line ):
 					new_line.append( val )
-					if spec[:len(O_group  )] == O_group:
-						if val > -1:
-							normed_data_O[ genes[ idx ] ].append( val )
-					elif spec[:len(O_group  )] == A_group:
+					if spec[:len( A_group )] == A_group:
 						if val > -1:
 							normed_data_A[ genes[ idx ] ].append( val )
-					else:
+					elif spec[:len( B_group )] == B_group:
 						if val > -1:
 							normed_data_B[ genes[ idx ] ].append( val )
+					else:
+						print "ERROR: value was not assigned to any group: " + species + "\t" + genes[ idx ]
 				out.write( "\t".join( map( str, new_line ) ) + "\n" )
 				
-	return normed_data_O,normed_data_A, normed_data_B
+	return normed_data_A, normed_data_B
 
 
-def generate_summary_table( O, A, B, dataoutputfile, O_group, A_group, B_group, genes ):
+def generate_figure_and_table( A, B, figure_file, dataoutputfile, A_group, B_group, genes, cutoff ):
 	"""! @brief generate boxplots as overview of entire flavonoid biosynthesis pathway """
 	
+	# --- generation of data output file --- #
 	with open( dataoutputfile, "w" ) as out:
-		out.write( "Gene\tOutgroup\tAnthocyanins\tBetalains\n" )
+		out.write( "Gene\tAnthocyanins\tBetalains\n" )
 		for idx, gene in enumerate( genes ):
-			new_line = [ gene, ",".join( map( str, O[ gene ] ) ), ",".join( map( str, A[ gene ] ) ), ",".join( map( str, B[ gene ] ) ) ]
+			new_line = [ gene, ",".join( map( str, A[ gene ] ) ), ",".join( map( str, B[ gene ] ) ) ]
 			out.write( "\t".join( new_line ) + "\n" )
+	
+	# --- generation of figures --- #
+	universal_fontsize = 14
+	sample_size_fontsize = 8
+	
+	fig, ax = plt.subplots( figsize=(10, 5) )	#, sharex=True
+	
+	A_positions = []
+	B_positions = []
+	A_values = []
+	B_values = []
+	labels = []
+	
+	for idx, gene in enumerate( genes ):
+		labels.append( "$\it{" + gene.replace( "-", "'") +"}$"  )
+		A_positions.append( idx )
+		B_positions.append( idx+0.25 )
+		A_values.append( A[ gene ] )
+		B_values.append( B[ gene ] )
+		
+		try:
+			print gene
+			try:
+				print "A mean : " + str( np.median( A[ gene ] ) )
+			except:
+				pass
+			try:
+				print "B mean : " + str( np.median( B[ gene ] ) )
+			except:
+				pass
+			
+			r, p = stats.mannwhitneyu( A[ gene ], B[ gene ] )
+			print A_group + " vs. " +  B_group + ": " + str( p ) + "\n"
+		except ValueError:
+			pass
+	
+	B_color = "magenta"
+	ax.boxplot( B_values, positions=B_positions, widths=0.2,
+						patch_artist=True, showfliers=False,	#showmeans=True, notch=True, 
+						boxprops=dict(facecolor=B_color, color=B_color),
+						capprops=dict(color=B_color),
+						whiskerprops=dict(color=B_color),
+						flierprops=dict(color=B_color, markeredgecolor=B_color),
+						medianprops=dict(color="black") 
+					)
+	
+	A_color = "dodgerblue"
+	ax.boxplot( A_values, positions=A_positions, labels=labels, widths=0.2,				#plotting this block last places labels in center
+						patch_artist=True, showfliers=False,	#showmeans=True, notch=True, 
+						boxprops=dict(facecolor=A_color, color=A_color),
+						capprops=dict(color=A_color),
+						whiskerprops=dict(color=A_color),
+						flierprops=dict(color=A_color, markeredgecolor=A_color),
+						medianprops=dict(color="black") 
+					)
+
+	ax.set_ylabel( "gene expression [TPMs]", fontsize=universal_fontsize )
+	ax.set_xlim( -0.3, len( genes )-0.2 )
+	ax.set_ylim( 0, cutoff )
+	
+	ax.tick_params(axis='both', which='major', labelsize=universal_fontsize )
+	ax.tick_params(axis='both', which='minor', labelsize=universal_fontsize )
+	
+	legend_elements = [ 	mpatches.Patch( color=A_color, label= "anthocyanin" ),	#A_group
+										mpatches.Patch( color=B_color, label= "betalain" ) 	#B_group
+									]
+	ax.legend( handles=legend_elements, loc="upper right", bbox_to_anchor=( 0.999, 0.999 ), ncol=1, fontsize=universal_fontsize )
+	
+	plt.subplots_adjust( left=0.1, right=0.999, top=0.98, bottom=0.06, hspace=0.03 )
+	
+	fig.savefig( figure_file )
 
 
 def main( arguments ):
@@ -125,6 +197,11 @@ def main( arguments ):
 	taxon_table = arguments[ arguments.index( '--taxon' )+1 ]
 	genes = arguments[ arguments.index( '--genes' )+1 ].split(',')
 	
+	if '--ymax' in arguments:
+		cutoff = int( arguments[ arguments.index( '--ymax' )+1 ] )
+	else:
+		cutoff = 10000
+	
 	data = load_data_from_table( input_file )
 	origin = True
 	taxon_mapping = load_spec_name_mapping_table( taxon_table, origin )
@@ -133,19 +210,19 @@ def main( arguments ):
 		os.makedirs( output_folder )
 	
 	# --- generate data table for heatmap construction --- #
-	normed_data_O, normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A0_A2_B2.txt", "A0", "A2", "B2", genes )
-	generate_summary_table( normed_data_O, normed_data_A, normed_data_B, output_folder + "pathway_overview_A2_B2.data.txt", "A0", "A2", "B2", genes )
+	normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A_B2.txt", "A", "B2", genes )
+	generate_figure_and_table( normed_data_A, normed_data_B, output_folder + "pw_A_B2.pdf", output_folder + "pw_A_B2.data.txt", "A", "B2", genes, cutoff )
 	
-	normed_data_O, normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A0_A2_B3.txt", "A0", "A2", "B3", genes )
-	generate_summary_table( normed_data_O, normed_data_A, normed_data_B, output_folder + "pathway_overview_A2_B3.data.txt", "A0", "A2", "B3", genes  )
-	
-	
-	normed_data_O, normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A0_A2_B4.txt", "A0", "A2", "B4", genes )
-	generate_summary_table( normed_data_O, normed_data_A, normed_data_B, output_folder + "pathway_overview_A2_B4.data.txt", "A0", "A2", "B4", genes  )
+	normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A_B3.txt", "A", "B3", genes )
+	generate_figure_and_table( normed_data_A, normed_data_B, output_folder + "pw_A_B3.pdf", output_folder + "pw_A_B3.data.txt", "A", "B3", genes, cutoff  )
 	
 	
-	normed_data_O, normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_X_A_B.txt", "Y", "A", "B", genes )
-	generate_summary_table( normed_data_O, normed_data_A, normed_data_B, output_folder + "pathway_overview_X_A_B.data.txt", "Y", "A", "B", genes  )
+	normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A_B4.txt", "A", "B4", genes )
+	generate_figure_and_table( normed_data_A, normed_data_B, output_folder + "pw_A_B4.pdf", output_folder + "pw_A_B4.data.txt", "A", "B4", genes, cutoff  )
+	
+	
+	normed_data_A, normed_data_B = generate_data_matrix_file( data, taxon_mapping, output_folder + "table_for_heatmap_A_B.txt", "A", "B", genes )
+	generate_figure_and_table( normed_data_A, normed_data_B, output_folder + "pw_A_B.pdf", output_folder + "pw_A_B.data.txt", "A", "B", genes, cutoff  )
 	
 
 
