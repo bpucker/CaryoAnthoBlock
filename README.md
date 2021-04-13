@@ -347,6 +347,29 @@ Mandatory:
 4)  `black_list_cleaning.py` can be used to remove a set of sequences from the CDS and PEP file based on their IDs.
 
 
+```
+Usage:
+  python black_list_cleaning.py --cdsin <FILE> --cdsout <FILE> --black <FILE> --pepin <FILE> --pepout <FILE>
+
+Mandatory:
+  --cdsin    STR    CDS input file
+  --cdsout   STR    CDS output file
+  --black    STR    List of IDs to remove
+  --pepin    STR    Peptide input file
+  --pepout   STR    Peptide output file
+```
+
+`--cdsin` specifies the CDS input file (FASTA).
+
+`--cdsout` specifies the CDS output file (FASTA).
+
+`--black` specifies the black list file. This file contains ID of sequences that will not be transferred to the respective output file.
+
+`--pepin` specifies the peptide input file (FASTA).
+
+`--pepout` specifies the peptide output file (FASTA).
+
+
 
 
 TO DO:
