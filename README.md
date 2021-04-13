@@ -269,9 +269,33 @@ Mandatory:
 
 ### 9) Support for gene loss through synteny analysis ###
 
-jcvi_wrapper_genes.py
+This script support the contruction of synteny plots via the Python package JCVI.
 
 
+```
+Usage:
+  python jcvi_wrapper_genes.py
+
+Mandatory:
+  --gff         STR         GFF3 input files
+  --cds         STR         CDS input files
+  --feature     STR         mRNA features
+  --ID          STR         IDs
+  --specs       STR         Species names
+  --chromosomes STR         Chromosome names
+```
+
+`--gff` specifies the GFF input files. A comma-separated list of file names is expected. The order of file names need to match the order of the other arguments. Position in the list is used to connect the GFF file to the CDS file and the other parameters/arguments provided for this particular species.
+
+`--cds` specifies the CDS input files. A comma-separated list of file names is expected. Differences between the CDS and the GFF file cause the exclusion of the effected genes.
+
+`--feature` specifies the feature names of mRNA that are used in the respective GFF3 file. Usual options are 'mRNA' or 'transcript'. 
+
+`--ID` specifies the ID flag that is used for the mRNA ID in the mRNA row. Usually, this is 'ID'.
+
+`--specs` specifies names for all analyzed species. These names will be used to name files and to label results in the final figure. Spaces and other special characters should be avoided. 
+
+`--chromosomes` specifies the chromosome names that should be displayed. 
 
 
 
