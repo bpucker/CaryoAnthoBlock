@@ -267,6 +267,15 @@ Mandatory:
 
 
 
+### 9) Support for gene loss through synteny analysis ###
+
+jcvi_wrapper_genes.py
+
+
+
+
+
+
 ### Additional scripts ###
 
 1) Run `get_best_seq_per_spec.py` to extract the best candidate sequences of a species without a perfect match for the KIPEs results.
@@ -313,6 +322,30 @@ Mandatory:
 `--ref` specifies the peptide reference file (FASTA).
 
 `--out` specifies the output folder. This folder will be created if it does not exist.
+
+
+3) `get_matching_CDS.py` can be used to collect the corresponding coding sequences of a set of peptide sequences.
+
+
+```
+Usage:
+  python get_matching_CDS.py --in <FILE> --out <FILE> --data <FOLDER>
+
+Mandatory:
+  --in    STR         Peptide input file
+  --out   STR         CDS output file
+  --data  STR         List of folders with CDS files
+```
+
+`--in` specifies the peptide input file (FASTA). Corresponding coding sequences of these peptide sequences will be extracted by this script.
+
+`--out` specifies the CDS output file (FASTA). All corresponding coding sequences will be stored in this file under the same name as the corresponding peptide sequence.
+
+`--data` specifies the data folders where the CDS files are located. This can be a comma-separated list to provide multiple folder names.
+
+
+4)  `black_list_cleaning.py` can be used to remove a set of sequences from the CDS and PEP file based on their IDs.
+
 
 
 
