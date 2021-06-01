@@ -1,4 +1,4 @@
-# AnthoExp
+# CaryoAnthoBlock: Investigation of the anthocyanin biosynthesis block in the Caryophyllales
 
 The scripts in this repository are the basis for the transcript abundance comparison of the anthocyanin biosynthesis pathways in anthocyanin and betalain producing species. While re-use of most scripts is possible, they are customized for this analysis and might require modifications for other applications. The purposes of this repository is mainly documentation. All scripts are intended to be used with Python 2.7. Running these scripts with Python 3 might work, but was not continuously evaluated. Several (standard) scientific Python packages are required including numpy, scipy, and matplotlib.
 
