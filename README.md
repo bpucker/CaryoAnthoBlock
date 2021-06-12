@@ -222,7 +222,7 @@ Mandatory:
 `--out` specifies the output folder. This folder is created if it does not exist.
 
 
-### 8) Subfunctionalization of gene copies could be due to divergent expression.###
+### 8) Subfunctionalization of gene copies could be due to divergent expression ###
 
 `coexp_analysis.py` was applied to compare the co-expression of different gene copies (e.g. CHS) with other steps in the pathway (e.g. FLS, DFR, and ANS) to investigate sub-functionalization in form of differential transcript abundances.
 
