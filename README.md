@@ -221,6 +221,28 @@ Mandatory:
 
 `--out` specifies the output folder. This folder is created if it does not exist.
 
+c) `qPCR_ref_gene_exp.py` combines the transcript abundances for each qPCR reference gene across all species in one lineage. The result is used to check for systematic differences between species.
+
+```
+Usage:
+  python qPCR_ref_gene_exp.py --in <FILE> --out <FOLDER> --taxon <FILE> --genes <STR>
+
+Mandatory:
+  --in    STR         Input file
+  --taxon STR         Taxon table
+  --genes STR         List of genes
+  --out   STR         Output folder
+```
+
+`--in` specifies the input file which is the summary file produced by `prep_TPM_summary.py`.
+
+`--taxon` specifies a table connecting species ID to species names and to the RNAseq data sets analysed.
+
+`--genes` specifies the genes of interest. A comma-separated list of gene names is expected. 
+
+`--out` specifies the output folder. This folder is created if it does not exist.
+
+
 
 ### 8) Subfunctionalization of gene copies could be due to divergent expression ###
 
@@ -392,12 +414,6 @@ Mandatory:
 `--pepin` specifies the peptide input file (FASTA).
 
 `--pepout` specifies the peptide output file (FASTA).
-
-
-
-
-TO DO:
-qPCR_ref_gene_exp.py
 
 
 
