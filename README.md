@@ -416,6 +416,26 @@ Mandatory:
 `--pepout` specifies the peptide output file (FASTA).
 
 
+5)  `check_paralog_exp.py` can be used to check the divergence of paralog gene expression. This supports the assumption that paralogs are due to spatial/temporal changes in gene expression rather than neofunctionalization.
+
+
+```
+Usage:
+  python check_paralog_exp.py --data <FILE> --genes <STR> --out <FILE>
+
+Mandatory:
+  --data   STR    gene expression input file
+  --genes  STR    comma-separated gene list
+  --out    STR    output file
+```
+
+`--data` specifies the gene expression file. One gene per row and one sample per column.
+
+`--genes` specifies the gene IDs of paralogs. Expression of these genes is compared against each other to show divergence.
+
+`--out` specifies the figure output file.
+
+
 
 
 # References
