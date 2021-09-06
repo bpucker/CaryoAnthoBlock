@@ -1,0 +1,121 @@
+PhytozomeID	Species	ReferencePublication/PI
+Acoerulea_322_v3_1	Aquilegia_coerulea	Filiault, D. L., Ballerini, E. S., Mandáková, T., Aköz, G., Derieg, N. J., Schmutz, J., … Nordborg, M. (2018). The Aquilegia genome provides insight into adaptive radiation and reveals an extraordinarily polymorphic chromosome with a unique history. ELife, 7. https://doi.org/10.7554/elife.36426
+Acomosus_321_v3	Ananas_comosus	Ming, R., VanBuren, R., Wai, C. M., Tang, H., Schatz, M. C., Bowers, J. E., … Yu, Q. (2015). The pineapple genome and the evolution of CAM photosynthesis. Nature Genetics, 47(12), 1435–1442. https://doi.org/10.1038/ng.3435
+Ahalleri_264_v1_1	Arabidopsis_halleri	Ute Kraemer & Detlef Weigel
+Ahypochondriacus_459_v2_1	Amaranthus_hypochondriacus	Lightfoot, D. J., Jarvis, D. E., Ramaraj, T., Lee, R., Jellen, E. N., & Maughan, P. J. (2017). Single-molecule sequencing and Hi-C-based proximity-guided assembly of amaranth (Amaranthus hypochondriacus) chromosomes provide insights into genome evolution. BMC Biology, 15(1). https://doi.org/10.1186/s12915-017-0412-4
+Ahypogaea_530_v1_0	Arachis_hypogaea	Bertioli, D. J., Jenkins, J., Clevenger, J., Dudchenko, O., Gao, D., Seijo, G., … Schmutz, J. (2019). The genome sequence of segmental allotetraploid peanut Arachis hypogaea. Nature Genetics, 51(5), 877–884. https://doi.org/10.1038/s41588-019-0405-z
+Alinifolium_472_v1_1	Alyssum_linifolium	Chris Pires & Steve Wright
+Alyrata_384_v2_1	Arabidopsis_lyrata	Hu, T. T., Pattyn, P., Bakker, E. G., Cao, J., Cheng, J.-F., Clark, R. M., … Guo, Y.-L. (2011). The Arabidopsis lyrata genome sequence and the basis of rapid genome size change. Nature Genetics, 43(5), 476–481. https://doi.org/10.1038/ng.807
+Aoccidentale_449_v0_9	Anacardium_occidentale	Dario Grattapaglia & Orzenil Silva-Junior
+Aofficinalis_498_V1_1	Asparagus_officinalis	?
+Athaliana_447_Araport11	Arabidopsis_thaliana	?
+Atrichopoda_291_v1_0	Amborella_trichopoda	Albert, V. A., Barbazuk, W. B., dePamphilis, C. W., Der, J. P., Leebens-Mack, J., Ma, H., … Tomsho, L. (2013). The Amborella Genome and the Evolution of Flowering Plants. Science, 342(6165), 1241089–1241089. https://doi.org/10.1126/science.1241089
+Bbraunii_502_v2_1	Botryococcus_braunii	Tomothy P. Devarenne & Andrew T. Koppisch
+Bdistachyon_556_v3_2	Brachypodium_distachyon	John Vogel & Todd Mockler
+Bhybridum_463_v1_1	Brachypodium_hybridum	Gordon, S. P., Contreras-Moreira, B., Levy, J. J., Djamei, A., Czedik-Eysenberg, A., Tartaglio, V. S., … Vogel, J. P. (2020). Gradual polyploid genome evolution revealed by pan-genomic analysis of Brachypodium hybridum and its diploid progenitors. Nature Communications, 11(1). https://doi.org/10.1038/s41467-020-17302-5
+Boleraceacapitata_446_v1_0	Brassica_oleracea	Liu, S., Liu, Y., Yang, X., Tong, C., Edwards, D., Parkin, I. A. P., … Paterson, A. H. (2014). The Brassica oleracea genome reveals the asymmetrical evolution of polyploid genomes. Nature Communications, 5(1). https://doi.org/10.1038/ncomms4930
+BrapaFPsc_277_v1_3	Brassica_rapa	-
+Bstacei_316_v1_1	Brachypodium_stacei	Gordon, S. P., Contreras-Moreira, B., Levy, J. J., Djamei, A., Czedik-Eysenberg, A., Tartaglio, V. S., … Vogel, J. P. (2020). Gradual polyploid genome evolution revealed by pan-genomic analysis of Brachypodium hybridum and its diploid progenitors. Nature Communications, 11(1). https://doi.org/10.1038/s41467-020-17302-5
+Bstricta_278_v1_2	Boechera_stricta	Lee, C.-R., Wang, B., Mojica, J. P., Mandáková, T., Prasad, K. V. S. K., Goicoechea, J. L., … Mitchell-Olds, T. (2017). Young inversion with multiple linked QTLs under selection in a hybrid zone. Nature Ecology & Evolution, 1(5). https://doi.org/10.1038/s41559-017-0119
+Bsylvaticum_490_v1_1	Brachypodium_sylvaticum	John Vogel
+Bvulgaris_548_EL10_1_0	Beta_vulgaris	McGrath, J. M. (Mitch), Funk, A., Galewski, P., Ou, S., Townsend, B., Davenport, K., … Dorn, K. (2020, September 16). A contiguous de novo genome assembly of sugar beet EL10 (Beta vulgaris L.). Cold Spring Harbor Laboratory. https://doi.org/10.1101/2020.09.15.298315
+Camplexicaulis_470_v1_1	Caulanthus_amplexicaulis	Chris Pires & Steve Wright
+Carietinum_492_v1_0	Cicer_arietinum	Varshney, R. K., Song, C., Saxena, R. K., Azam, S., Yu, S., Sharpe, A. G., … Cook, D. R. (2013). Draft genome sequence of chickpea (Cicer arietinum) provides a resource for trait improvement. Nature Biotechnology, 31(3), 240–246. https://doi.org/10.1038/nbt.2491
+Ccitriodora_507_v2_1	Corymbia_citriodora	Healey, A. L., Shepherd, M., King, G. J., Butler, J. B., Freeman, J. S., Lee, D. J., … Henry, R. J. (2021). Pests, diseases, and aridity have shaped the genome of Corymbia citriodora. Communications Biology, 4(1). https://doi.org/10.1038/s42003-021-02009-0
+Cclementina_182_v1_0	Citrus_clementina	???
+Cgrandiflora_266_v1_1	Capsella_grandiflora	Slotte, T., Hazzouri, K. M., Ågren, J. A., Koenig, D., Maumus, F., Guo, Y.-L., … Wright, S. I. (2013). The Capsella rubella genome and the genomic consequences of rapid mating system evolution. Nature Genetics, 45(7), 831–835. https://doi.org/10.1038/ng.2669
+Chispanica_488_v1_1	Crambe_hispanica	Chris Pires & Steve Wright
+Ckanehirae_531_v3	Cinnamomum_kanehirae	Chaw, S.-M., Liu, Y.-C., Wu, Y.-W., Wang, H.-Y., Lin, C.-Y. I., Wu, C.-S., … Tsai, I. J. (2019). Stout camphor tree genome fills gaps in understanding of flowering plant genome evolution. Nature Plants, 5(1), 63–73. https://doi.org/10.1038/s41477-018-0337-0
+Cmaritima_481_v1_1	Cakile_maritima	Chris Pires & Steve Wright
+Cpapaya_113_ASGPBv0_4	Carica_papaya	Ming, R., Hou, S., Feng, Y., Yu, Q., Dionne-Laporte, A., Saw, J. H., … Alam, M. (2008). The draft genome of the transgenic tropical fruit tree papaya (Carica papaya Linnaeus). Nature, 452(7190), 991–996. https://doi.org/10.1038/nature06856
+CpurpureusGG1_539_v1_1	Ceratodon_purpureus	Carey, S. B., Jenkins, J., Lovell, J. T., Maumus, F., Sreedasyam, A., Payton, A. C., … McDaniel, S. F. (2021). Gene-rich UV sex chromosomes harbor conserved regulators of sexual development. Science Advances, 7(27), eabh2488. https://doi.org/10.1126/sciadv.abh2488
+Cquinoa_392_v1_0	Chenopodium_quinoa	Jarvis, D. E., Ho, Y. S., Lightfoot, D. J., Schmöckel, S. M., Li, B., Borm, T. J. A., … Tester, M. (2017). The genome of Chenopodium quinoa. Nature, 542(7641), 307–312. https://doi.org/10.1038/nature21370
+Creinhardtii_281_v5_6	Chlamydomonas_reinhardtii	Merchant, S. S., Prochnik, S. E., Vallon, O., Harris, E. H., Karpowicz, S. J., Witman, G. B., … Grossman, A. R. (2007). The Chlamydomonas Genome Reveals the Evolution of Key Animal and Plant Functions. Science, 318(5848), 245–250. https://doi.org/10.1126/science.1143609
+Crubella_474_v1_1	Capsella_rubella	Slotte, T., Hazzouri, K. M., Ågren, J. A., Koenig, D., Maumus, F., Guo, Y.-L., … Wright, S. I. (2013). The Capsella rubella genome and the genomic consequences of rapid mating system evolution. Nature Genetics, 45(7), 831–835. https://doi.org/10.1038/ng.2669
+Csinensis_154_v1_1	Camellia_sinensis	?
+Csinensis_154_v1_1	Camellia_nitidissima	?
+Cviolacea_484_v1_1	Cleome_violacea	-
+Czofingiensis_461_v5_2_3_2	Chromochloris_zofingiensis	Roth, M. S., Cokus, S. J., Gallaher, S. D., Walter, A., Lopez, D., Erickson, E., … Niyogi, K. K. (2017). Chromosome-level genome assembly and transcriptome of the green alga Chromochloris zofingiensis illuminates astaxanthin production. Proceedings of the National Academy of Sciences, 114(21), E4296–E4305. https://doi.org/10.1073/pnas.1619928114
+Dalata_550_v2_1	Dioscorea_alata	Cormier, F., Lawac, F., Maledon, E., Gravillon, M.-C., Nudol, E., Mournet, P., … Arnau, G. (2019). A reference high-density genetic map of greater yam (Dioscorea alata L.). Theoretical and Applied Genetics, 132(6), 1733–1744. https://doi.org/10.1007/s00122-019-03311-6
+Dcarota_388_v2_0	Daucus_carota	Iorizzo, M., Ellison, S., Senalik, D., Zeng, P., Satapoomin, P., Huang, J., … Simon, P. (2016). A high-quality carrot genome assembly provides new insights into carotenoid accumulation and asterid genome evolution. Nature Genetics, 48(6), 657–666. https://doi.org/10.1038/ng.3565
+Dsalina_325_v1_0	Dunaliella_salina	Polle, J. E. W., Barry, K., Cushman, J., Schmutz, J., Tran, D., Hathwaik, L. T., … Magnuson, J. (2017). Draft Nuclear Genome Sequence of the Halophilic and Beta-Carotene-Accumulating Green Alga Dunaliella salina Strain CCAP19/18. Genome Announcements, 5(43). https://doi.org/10.1128/genomea.01105-17
+Dsophioides_482_v1_1	Descurainia_sophioides	Chris Pires & Steve Wright
+Dstrictus_489_v1_1	Diptychocarpus_strictus	-
+Egrandis_297_v2_0	Eucalyptus_grandis	Myburg, A. A., Grattapaglia, D., Tuskan, G. A., Hellsten, U., Hayes, R. D., Grimwood, J., … Schmutz, J. (2014). The genome of Eucalyptus grandis. Nature, 510(7505), 356–362. https://doi.org/10.1038/nature13308
+Esalsugineum_173_v1_0	Eutrema_salsugineum	Yang, R., Jarvis, D. E., Chen, H., Beilstein, M. A., Grimwood, J., Jenkins, J., … Wang, X. (2013). The Reference Genome of the Halophytic Plant Eutrema salsugineum. Frontiers in Plant Science, 4. https://doi.org/10.3389/fpls.2013.00046
+Esyriacum_483_v1_1	Euclidium_syriacum	Chris Pires & Steve Wright
+Evesicaria_487_v1_1	Eruca_vesicaria	Chris Pires & Steve Wright
+Fvesca_501_v2_0_a2	Fragaria_vesca	Li, Y., Wei, W., Feng, J., Luo, H., Pi, M., Liu, Z., & Kang, C. (2017). Genome re-annotation of the wild strawberry Fragaria vesca using extensive Illumina- and SMRT-based RNA-seq datasets. DNA Research, 25(1), 61–70. https://doi.org/10.1093/dnares/dsx038
+Gbarbadense_526_v1_1	Gossypium_barbadense	Chen, Z. J., Sreedasyam, A., Ando, A., Song, Q., De Santiago, L. M., Hulse-Kemp, A. M., … Schmutz, J. (2020). Genomic diversifications of five Gossypium allopolyploid species and their impact on cotton improvement. Nature Genetics, 52(5), 525–533. https://doi.org/10.1038/s41588-020-0614-5
+Gdarwinii_529_v1_1	Gossypium_darwinii	Chen, Z. J., Sreedasyam, A., Ando, A., Song, Q., De Santiago, L. M., Hulse-Kemp, A. M., … Schmutz, J. (2020). Genomic diversifications of five Gossypium allopolyploid species and their impact on cotton improvement. Nature Genetics, 52(5), 525–533. https://doi.org/10.1038/s41588-020-0614-5
+Ghirsutum_527_v2_1	Gossypium_hirsutum	Chen, Z. J., Sreedasyam, A., Ando, A., Song, Q., De Santiago, L. M., Hulse-Kemp, A. M., … Schmutz, J. (2020). Genomic diversifications of five Gossypium allopolyploid species and their impact on cotton improvement. Nature Genetics, 52(5), 525–533. https://doi.org/10.1038/s41588-020-0614-5
+GmaxLee_510_v1_1	Glycine_max	?
+Gmustelinum_524_v1_1	Gossypium_mustelinum	Chen, Z. J., Sreedasyam, A., Ando, A., Song, Q., De Santiago, L. M., Hulse-Kemp, A. M., … Schmutz, J. (2020). Genomic diversifications of five Gossypium allopolyploid species and their impact on cotton improvement. Nature Genetics, 52(5), 525–533. https://doi.org/10.1038/s41588-020-0614-5
+Graimondii_221_v2_1	Gossypium_raimondii	Paterson, A. H., Wendel, J. F., Gundlach, H., Guo, H., Jenkins, J., Jin, D., … Schmutz, J. (2012). Repeated polyploidization of Gossypium genomes and the evolution of spinnable cotton fibres. Nature, 492(7429), 423–427. https://doi.org/10.1038/nature11798
+Gsoja_509_v1_1	Glycine_soja	Valliyodan, B., Cannon, S. B., Bayer, P. E., Shu, S., Brown, A. V., Ren, L., … Nguyen, H. T. (2019). Construction and comparison of three reference‐quality genome assemblies for soybean. The Plant Journal, 100(5), 1066–1082. https://doi.org/10.1111/tpj.14500
+Gtomentosum_525_v1_1	Gossypium_tomentosum	Chen, Z. J., Sreedasyam, A., Ando, A., Song, Q., De Santiago, L. M., Hulse-Kemp, A. M., … Schmutz, J. (2020). Genomic diversifications of five Gossypium allopolyploid species and their impact on cotton improvement. Nature Genetics, 52(5), 525–533. https://doi.org/10.1038/s41588-020-0614-5
+Hannuus_494_r1_2	Helianthus_annuus	Badouin, H., Gouzy, J., Grassa, C. J., Murat, F., Staton, S. E., Cottret, L., … Langlade, N. B. (2017). The sunflower genome provides insights into oil metabolism, flowering and Asterid evolution. Nature, 546(7656), 148–152. https://doi.org/10.1038/nature22380
+Hvulgare_462_r1	Hordeum_vulgare	Beier, S., Himmelbach, A., Colmsee, C., Zhang, X.-Q., Barrero, R. A., Zhang, Q., … Mascher, M. (2017). Construction of a map-based reference genome sequence for barley, Hordeum vulgare L. Scientific Data, 4(1). https://doi.org/10.1038/sdata.2017.44
+Iamara_485_v1_1	Iberis_amara	Chris Pires & Steve Wright
+Itinctoria_475_v1_1	Isatis_tinctoria	Chris Pires & Steve Wright
+Kfedtschenkoi_382_v1_1	Kalanchoe_fedtschenkoi	Yang, X., Hu, R., Yin, H., Jenkins, J., Shu, S., Tang, H., … Tuskan, G. A. (2017). The Kalanchoë genome provides insights into convergent evolution and building blocks of crassulacean acid metabolism. Nature Communications, 8(1). https://doi.org/10.1038/s41467-017-01491-7
+Klaxiflora_309_v1_1	Kalanchoe_laxiflora	Jerry Tuskan & Xiaohan Yang
+Lannua_476_v1_1	Lunaria_annua	Chris Pires & Steve Wright
+Lsativa_467_v5	Lactuca_sativa	Reyes-Chin-Wo, S., Wang, Z., Yang, X., Kozik, A., Arikit, S., Song, C., … Michelmore, R. W. (2017). Genome assembly with in vitro proximity ligation data and whole-genome triplication in lettuce. Nature Communications, 8(1). https://doi.org/10.1038/ncomms14953
+Lsativum_478_v1_1	Lepidium_sativum	Chris Pires & Steve Wright
+Lusitatissimum_200_v1_0	Linum_usitatissimum	Wang, Z., Hobson, N., Galindo, L., Zhu, S., Shi, D., McDill, J., … Deyholos, M. K. (2012). The genome of flax ( Linum usitatissimum ) assembled de novo from short shotgun sequence reads. The Plant Journal, 72(3), 461–473. https://doi.org/10.1111/j.1365-313x.2012.05093.x
+Macuminata_304_v1	Musa_acuminata	D’Hont, A., Denoeud, F., Aury, JM. et al. The banana (Musa acuminata) genome and the evolution of monocotyledonous plants. Nature 488, 213–217 (2012). https://doi.org/10.1038/nature11241
+Mdomestica_491_v1_1	Malus_domestica	Riccardo Velasco
+Mesculenta_520_v7_1	Manihot_esculenta	Bredeson, J. V., Lyons, J. B., Prochnik, S. E., Wu, G. A., Ha, C. M., Edsinger-Gonzales, E., … Rokhsar, D. S. (2016). Sequencing wild and cultivated cassava and related species reveals extensive interspecific hybridization and genetic diversity. Nature Biotechnology, 34(5), 562–570. https://doi.org/10.1038/nbt.3535
+Mguttatus_256_v2_0	Mimulus_guttatus_v2	Hellsten, U., Wright, K. M., Jenkins, J., Shu, S., Yuan, Y., Wessler, S. R., … Rokhsar, D. S. (2013). Fine-scale variation in meiotic recombination in Mimulus inferred from population shotgun sequencing. Proceedings of the National Academy of Sciences, 110(48), 19478–19482. https://doi.org/10.1073/pnas.1319032110
+MguttatusNONTOL_553_v4_0	Mimulus_guttatus_NONTOL	John H. Willis & Todd J. Vision
+MguttatusTOL_551_v5_0	Mimulus_guttatus_TOL	John H. Willis & Todd J. Vision
+Mmaritima_477_v1_1	Malcolmia_maritima	Chris Pires & Steve Wright
+Mperfoliatum_471_v1_1	Myagrum_perfoliatum	-
+Mpolymorpha_320_v3_1	Marchantia_polymorpha	Bowman, J. L., Kohchi, T., Yamato, K. T., Jenkins, J., Shu, S., Ishizaki, K., … Schmutz, J. (2017). Insights into Land Plant Evolution Garnered from the Marchantia polymorpha Genome. Cell, 171(2), 287-304.e15. https://doi.org/10.1016/j.cell.2017.09.030
+MpusillaCCMP1545_228_v3_0	Micromonas_pusilla_CCMP1545	Worden, A. Z., Lee, J.-H., Mock, T., Rouze, P., Simmons, M. P., Aerts, A. L., … Grigoriev, I. V. (2009). Green Evolution and Dynamic Adaptations Revealed by Genomes of the Marine Picoeukaryotes Micromonas. Science, 324(5924), 268–272. https://doi.org/10.1126/science.1167222
+MpusillaRCC299_229_v3_0	Micromonas_pusilla_RCC299	Worden, A. Z., Lee, J.-H., Mock, T., Rouze, P., Simmons, M. P., Aerts, A. L., … Grigoriev, I. V. (2009). Green Evolution and Dynamic Adaptations Revealed by Genomes of the Marine Picoeukaryotes Micromonas. Science, 324(5924), 268–272. https://doi.org/10.1126/science.1167222
+Msinensis_497_v7_1	Miscanthus_sinensis	Mitros, T., Session, A. M., James, B. T., Wu, G. A., Belaffif, M. B., Clark, L. V., … Rokhsar, D. S. (2020). Genome biology of the paleotetraploid perennial biomass crop Miscanthus. Nature Communications, 11(1). https://doi.org/10.1038/s41467-020-18923-6
+Mtruncatula_285_Mt4_0v1	Medicago_truncatula	Tang, H., Krishnakumar, V., Bidwell, S., Rosen, B., Chan, A., Zhou, S., … Town, C. D. (2014). An improved genome release (version Mt4.0) for the model legume Medicago truncatula. BMC Genomics, 15(1). https://doi.org/10.1186/1471-2164-15-312
+Oeuropaea_451_v1_0	Olea_europaea	Unver, T., Wu, Z., Sterck, L., Turktas, M., Lohaus, R., Li, Z., … Van de Peer, Y. (2017). Genome of wild olive and the evolution of oil biosynthesis. Proceedings of the National Academy of Sciences, 114(44), E9413–E9422. https://doi.org/10.1073/pnas.1708621114
+Olucimarinus_231_v2_0	Ostreococcus_lucimarinus	Palenik, B., Grimwood, J., Aerts, A., Rouzé, P., Salamov, A., Putnam, N., … Grigoriev, I. V. (2007). The tiny eukaryoteOstreococcusprovides genomic insights into the paradox of plankton speciation. Proceedings of the National Academy of Sciences, 104(18), 7705–7710. https://doi.org/10.1073/pnas.0611046104
+Osativa_204_v7_0	Oryza_sativa	-
+OsativaKitaake_499_v3_1	Oryza_sativa_Kitaake	Jain, R., Jenkins, J., Shu, S., Chern, M., Martin, J. A., Copetti, D., … Ronald, P. C. (2019). Genome sequence of the model rice variety KitaakeX. BMC Genomics, 20(1). https://doi.org/10.1186/s12864-019-6262-4
+Othomaeum_386_v1_0	Oropetium_thomaeum	VanBuren, R., Bryant, D., Edger, P. P., Tang, H., Burgess, D., Challabathula, D., … Mockler, T. C. (2015). Single-molecule sequencing of the desiccation-tolerant grass Oropetium thomaeum. Nature, 527(7579), 508–511. https://doi.org/10.1038/nature15714
+PdeltoidesWV94_445_v2_1	Populus_deltoides	Jerry Tuskan
+Phallii_495_v3_1	Panicum_hallii	?
+Ppatens_318_v3_3	Physcomitrella_patens	Lang, D., Ullrich, K. K., Murat, F., Fuchs, J., Jenkins, J., Haas, F. B., … Rensing, S. A. (2018). ThePhyscomitrella patenschromosome-scale assembly reveals moss genome structure and evolution. The Plant Journal, 93(3), 515–533. https://doi.org/10.1111/tpj.13801
+Ppersica_298_v2_1	Prunus_persica	Verde, I., Abbott, A. G., Scalabrin, S., Jung, S., Shu, S., Marroni, F., … Rokhsar, D. S. (2013). The high-quality draft genome of peach (Prunus persica) identifies unique patterns of genetic diversity, domestication and genome evolution. Nature Genetics, 45(5), 487–494. https://doi.org/10.1038/ng.2586
+Ptrichocarpa_533_v4_1	Populus_trichocarpa	-
+PtrichocarpaStettler14_532_v1_1	Populus_trichocarpa_Stettler	Bob Schmitz
+Pumbilicalis_456_v1_5	Porphyra_umbilicalis	Brawley, S. H., Blouin, N. A., Ficko-Blean, E., Wheeler, G. L., Lohr, M., Goodson, H. V., … Prochnik, S. E. (2017). Insights into the red algae and eukaryotic evolution from the genome ofPorphyra umbilicalis(Bangiophyceae, Rhodophyta). Proceedings of the National Academy of Sciences, 114(31), E6361–E6370. https://doi.org/10.1073/pnas.1703088114
+Pvirgatum_516_v5_1	Panicum_virgatum	Lovell, J. T., MacQueen, A. H., Mamidi, S., Bonnette, J., Jenkins, J., Napier, J. D., … Schmutz, J. (2021). Genomic mechanisms of climate adaptation in polyploid bioenergy switchgrass. Nature, 590(7846), 438–444. https://doi.org/10.1038/s41586-020-03127-1
+Pvulgaris_442_v2_1	Phaseolus_vulgaris	Scott Jackson, Phil McClean, Jeremy Schmutz
+PvulgarisUI111_534_v1_1	Phaseolus_vulgarisUI111	Phil McClean, Jeremy Schmutz
+Pvulgaris	Phaseolus_coccineus	?
+Rcommunis_119_v0_1	Ricinus_communis	Chan, A. P., Crabtree, J., Zhao, Q., Lorenzi, H., Orvis, J., Puiu, D., … Rabinowicz, P. D. (2010). Draft genome sequence of the oilseed species Ricinus communis. Nature Biotechnology, 28(9), 951–956. https://doi.org/10.1038/nbt.1674
+Rislandica_473_v1_1	Rorippa_islandica	Chris Pires & Steve Wright
+Salba_480_v1_1	Sinapis_alba	A	Chris Pires & Steve Wright
+Sbicolor_454_v3_1_1	Sorghum_bicolor	John Vogel
+Sfallax_522_v1_1	Sphagnum_fallax	John Shaw & David Weston 
+Sitalica_312_v2_2	Setaria_italica	Bennetzen, J. L., Schmutz, J., Wang, H., Percifield, R., Hawkins, J., Pontaroli, A. C., … Devos, K. M. (2012). Reference genome sequence of the model plant Setaria. Nature Biotechnology, 30(6), 555–561. https://doi.org/10.1038/nbt.2196
+Slycopersicum_514_ITAG3_2	Solanum_lycopersicum	The Tomato Genome Consortium. The tomato genome sequence provides insights into fleshy fruit evolution. Nature 485, 635–641 (2012). https://doi.org/10.1038/nature11119
+Smagellanicum_521_v1_1	Sphagnum_magellanicum	John Shaw & David Weston
+Smoellendorffii_91_v1_0	Selaginella_moellendorffii	Banks, J. A., Nishiyama, T., Hasebe, M., Bowman, J. L., Gribskov, M., dePamphilis, C., … Grigoriev, I. V. (2011). The Selaginella Genome Identifies Genetic Changes Associated with the Evolution of Vascular Plants. Science, 332(6032), 960–963. https://doi.org/10.1126/science.1203810
+Spinnata_486_v1_1	Stanleya_pinnata	Chris Pires & Steve Wright
+Spolyrhiza_290_v2	Spirodela_polyrhiza	Wang, W., Haberer, G., Gundlach, H., Gläßer, C., Nussbaumer, T., Luo, M. C., … Messing, J. (2014). The Spirodela polyrhiza genome reveals insights into its neotenous reduction fast growth and aquatic lifestyle. Nature Communications, 5(1). https://doi.org/10.1038/ncomms4311
+Spurpurea_519_v5_1	Salix_purpurea	Lawrence Smart, Christopher Town, Stephen DiFazio, Gerald Tuskan
+SpurpureaFishCreek_518_v3_1	Salix_purpurea	Lawrence Smart, Christopher Town, Stephen DiFazio, Gerald Tuskan
+Stuberosum_448_v4_03	Solanum_tuberosum	The Potato Genome Sequencing Consortium. Genome sequence and analysis of the tuber crop potato. Nature 475, 189–195 (2011). https://doi.org/10.1038/nature10158
+Sviridis_500_v2_1	Setaria_viridis	Mamidi, S., Healey, A., Huang, P., Grimwood, J., Jenkins, J., Barry, K., … Kellogg, E. A. (2020). A genome resource for green millet Setaria viridis enables discovery of agronomically valuable loci. Nature Biotechnology, 38(10), 1203–1210. https://doi.org/10.1038/s41587-020-0681-2
+Taestivum_296_v2_2	Triticum_aestivum	Mayer, K. F. X., Rogers, J., Dole el, J., Pozniak, C., Eversole, K., Feuillet, C., … Praud, S. (2014). A chromosome-based draft sequence of the hexaploid bread wheat (Triticum aestivum) genome. Science, 345(6194), 1251788–1251788. https://doi.org/10.1126/science.1251788
+Tarvense_479_v1_1	Thlaspi_arvense	Chris Pires & Steve Wright
+Tcacao_523_v2_1	Theobroma_cacao	Motamayor, J. C., Mockaitis, K., Schmutz, J., Haiminen, N., III, D. L., Cornejo, O., … Kuhn, D. N. (2013). The genome sequence of the most widely cultivated cacao type and its use to identify candidate genes regulating pod color. Genome Biology, 14(6). https://doi.org/10.1186/gb-2013-14-6-r53
+Tintermedium_503_v2_1	Thinopyrum_intermedium	Kevin M. Dorn & Jesse Poland
+Tpratense_385_v2	Trifolium_pratense	De Vega, J. J., Ayling, S., Hegarty, M., Kudrna, D., Goicoechea, J. L., Ergon, Å., … Skøt, L. (2015). Red clover (Trifolium pratense L.) draft genome provides a platform for trait improvement. Scientific Reports, 5(1). https://doi.org/10.1038/srep17394
+Vcarteri_317_v2_1	Volvox_carteri	Prochnik, S. E., Umen, J., Nedelcu, A. M., Hallmann, A., Miller, S. M., Nishii, I., … Rokhsar, D. S. (2010). Genomic Analysis of Organismal Complexity in the Multicellular Green Alga Volvox carteri. Science, 329(5988), 223–226. https://doi.org/10.1126/science.1188800
+Vunguiculata_540_v1_2	Vigna_unguiculata	Lonardi, S., Muñoz‐Amatriaín, M., Liang, Q., Shu, S., Wanamaker, S. I., Lo, S., … Close, T. J. (2019). The genome of cowpea ( Vigna unguiculata [L.] Walp.). The Plant Journal, 98(5), 767–782. https://doi.org/10.1111/tpj.14349
+Vvinifera_457_v2_1	Vitis_vinifera	The grapevine genome sequence suggests ancestral hexaploidization in major angiosperm phyla. (2007). Nature, 449(7161), 463–467. https://doi.org/10.1038/nature06148
+Zmarina_324_v2_2	Zostera_marina	Ma, X., Olsen, J. L., Reusch, T. B. H., Procaccini, G., Kudrna, D., Williams, M., … Van de Peer, Y. (2021). Improved chromosome-level genome assembly and annotation of the seagrass, Zostera marina (eelgrass). F1000Research, 10, 289. https://doi.org/10.12688/f1000research.38156.1
+Zmays_284_Ensembl-18	Zea_mays_ENSEMBL-18	?
+ZmaysPH207_443_v1_1	Zea_mays_PH207	Hirsch, C. N., Hirsch, C. D., Brohammer, A. B., Bowman, M. J., Soifer, I., Barad, O., … Mikel, M. A. (2016). Draft Assembly of Elite Inbred Line PH207 Provides Insights into Genomic and Transcriptome Diversity in Maize. The Plant Cell, 28(11), 2700–2714. https://doi.org/10.1105/tpc.16.00353
