@@ -437,24 +437,27 @@ Mandatory:
 
 # Datasets #
 
-BPX1 = _Halostachys_caspica_
+BPX1 = _Halostachys caspica_
 
-BPX2 = _Myosoton_aquaticum_ (_Stellaria_aquatica_)
+BPX2 = _Myosoton aquaticum_ (_Stellaria aquatica_)
 
-BPX3 = _Oxyria_digyna_
+BPX3 = _Oxyria digyna_
 
-BPX4 = _Achyranthes_bidentata_
+BPX4 = _Achyranthes bidentata_
 
-BPX6 = _Dysphania_schraderiana_
+BPX6 = _Dysphania schraderiana_
 
-BPX7 = _Hammada_scoparia_
+BPX7 = _Hammada scoparia_
 
-BPX8 = _Hololachna_songarica_ (_Reaumuria_songarica_)
+BPX8 = _Hololachna songarica_ (_Reaumuria songarica_)
 
-BPX9 = _Gymnocarpos_przewalskii_
+BPX9 = _Gymnocarpos przewalskii_
 
 
 
 # References
 
 KIPEs: https://github.com/bpucker/KIPEs
+
+Yang et al., 2015
+
