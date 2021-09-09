@@ -435,6 +435,23 @@ Mandatory:
 
 `--out` specifies the figure output file.
 
+# Datasets #
+
+BPX1 = _Halostachys_caspica_
+
+BPX2 = _Myosoton_aquaticum_ (_Stellaria_aquatica_)
+
+BPX3 = _Oxyria_digyna_
+
+BPX4 = _Achyranthes_bidentata_
+
+BPX6 = _Dysphania_schraderiana_
+
+BPX7 = _Hammada_scoparia_
+
+BPX8 = _Hololachna_songarica_ (_Reaumuria_songarica_)
+
+BPX9 = _Gymnocarpos_przewalskii_
 
 
 
