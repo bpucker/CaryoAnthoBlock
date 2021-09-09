@@ -105,7 +105,7 @@ Mandatory:
 `--max` specifies the minimal percentage of reads/TPMs assigned to the top100 transcripts. An integer (percentage) is expected. Default: 80.
 
 
-### 6) Analysis of the gene expression per gene across single species is based on these scripts. ###
+### 6) Analysis of the gene expression per gene across two species is based on these scripts. ###
 
 a) `prep_TPM_summary_pairwise.py` connects the results of phylogenetic analyses with transcript abundance values. The result are summary tables showing the transcript abundance per species, per sample, and per step in the pathway.
 
