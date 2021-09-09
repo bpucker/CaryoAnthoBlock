@@ -459,5 +459,7 @@ BPX9 = _Gymnocarpos przewalskii_
 
 KIPEs: https://github.com/bpucker/KIPEs
 
-Yang et al., 2015
+Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in the Flavonoid Biosynthesis with Application on the Biomedicinal Plant Croton tiglium. Plants 2020, 9, 1103. doi:[10.3390/plants9091103](https://doi.org/10.3390/plants9091103)
+
+Ya Yang, Michael J. Moore, Samuel F. Brockington, Douglas E. Soltis, Gane Ka-Shu Wong, Eric J. Carpenter, Yong Zhang, Li Chen, Zhixiang Yan, Yinlong Xie, Rowan F. Sage, Sarah Covshoff, Julian M. Hibberd, Matthew N. Nelson, Stephen A. Smith, Dissecting Molecular Evolution in the Highly Diverse Plant Clade Caryophyllales Using Transcriptome Sequencing, Molecular Biology and Evolution, Volume 32, Issue 8, August 2015, Pages 2001–2014, doi:[10.1093/molbev/msv081](https://doi.org/10.1093/molbev/msv081)
 
