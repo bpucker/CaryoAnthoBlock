@@ -194,7 +194,7 @@ B	CHS	CHS_CONFIG_FILE.txt
 B	CHI	CHI_CONFIG_FILE.txt
 B	F3H	F3H_CONFIG_FILE.txt
 ```
-Each per gene config file contains the IDs of all orthologs of the respective gene in all analyzed Caryophyllales species. One IDs is given per line.
+Each per gene config file contains the IDs of all orthologs of the respective gene in all analyzed Caryophyllales species. One ID is given per line.
 
 `--out` specifies the output folder. This folder is created if it does not exist.
 
