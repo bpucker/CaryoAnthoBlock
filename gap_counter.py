@@ -47,7 +47,7 @@ def main( arguments ):
 	for key in list( seqs.keys() ):
 		seq = seqs[ key ].upper()
 		gaps = re.findall( "[N]+", seq )
-		sys.stdout.write( key + ": " + str( len( gaps ) ) + "\n" )
+		sys.stdout.write( key + ": " + str( len( gaps ) ) + "\t" + str( len( "".join( gaps ) ) ) + "/" + str( len( seqs[ key ] ) ) + "\n" )
 		sys.stdout.flush()
 
 
