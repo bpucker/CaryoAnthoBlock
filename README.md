@@ -457,6 +457,8 @@ BPX9 = _Gymnocarpos przewalskii_
 
 # References
 
+Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockington S. (2022). Evolutionary blocks to anthocyanin accumulation and the loss of an anthocyanin carrier protein in betalain-pigmented Caryophyllales. bioRxiv 2022.10.19.512958; doi: [10.1101/2022.10.19.512958](https://doi.org/10.1101/2022.10.19.512958).
+
 KIPEs: https://github.com/bpucker/KIPEs
 
 Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in the Flavonoid Biosynthesis with Application on the Biomedicinal Plant Croton tiglium. Plants 2020, 9, 1103. doi:[10.3390/plants9091103](https://doi.org/10.3390/plants9091103)
