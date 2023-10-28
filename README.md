@@ -457,6 +457,8 @@ BPX9 = _Gymnocarpos przewalskii_
 
 # References
 
+Pucker, B., Walker-Hale, N., Dzurlic, J., Yim, W.C., Cushman, J.C., Crum, A., Yang, Y. and Brockington, S.F. (2023), Multiple mechanisms explain loss of anthocyanins from betalain-pigmented Caryophyllales, including repeated wholesale loss of a key anthocyanidin synthesis enzyme. New Phytol. doi: [10.1111/nph.19341](https://doi.org/10.1111/nph.19341).
+
 Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockington S. (2022). Evolutionary blocks to anthocyanin accumulation and the loss of an anthocyanin carrier protein in betalain-pigmented Caryophyllales. bioRxiv 2022.10.19.512958; doi: [10.1101/2022.10.19.512958](https://doi.org/10.1101/2022.10.19.512958).
 
 KIPEs: https://github.com/bpucker/KIPEs
